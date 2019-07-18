@@ -205,7 +205,7 @@
             else
                 hires_count = 0
             endif
-        case(2-3)
+        case(2:3)
             !Unimplemented
             uuid = ''
             return
@@ -340,7 +340,7 @@
         !That's the additional time before the turn of the year 1583
 
         days = days + 102  ! 102 leap years from 1584 to 2000 inclusive
-        ! That's all the intercalataed days until 2000
+        ! That's all the intercalated days until 2000
 
         years = values(1) - 2000 - 1 ! years since 2000 - not including this year
 
