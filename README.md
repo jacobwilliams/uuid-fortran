@@ -36,7 +36,8 @@ To generate the documentation using [ford](https://github.com/Fortran-FOSS-Progr
 
 ### See also
 
- * [Universally unique identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+ * [A Universally Unique IDentifier (UUID) URN Namespace](https://datatracker.ietf.org/doc/html/rfc4122) [RFC 4122]
+ * [Universally unique identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) [Wikipedia]
 
 ## License
 
