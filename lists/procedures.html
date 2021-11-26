@@ -152,44 +152,29 @@ Uses the Mersenne Twister algorithm</p></td></tr>
 </a>
 </g>
 </g>
-<!-- proc~mtprng_rand64 -->
-<g id="call~~graph~~CallGraph_node2" class="node">
-<title>proc~mtprng_rand64</title>
-<g id="a_call~~graph~~CallGraph_node2"><a xlink:href=".././proc/mtprng_rand64.html" xlink:title="mtprng_rand64">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="232,-44 137,-44 137,-20 232,-20 232,-44"/>
-<text text-anchor="middle" x="184.5" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mtprng_rand64</text>
-</a>
-</g>
-</g>
-<!-- proc~mtprng_init -->
-<g id="call~~graph~~CallGraph_node3" class="node">
-<title>proc~mtprng_init</title>
-<g id="a_call~~graph~~CallGraph_node3"><a xlink:href=".././proc/mtprng_init.html" xlink:title="mtprng_init">
-<polygon fill="#d9534f" stroke="#d9534f" points="352,-24 279,-24 279,0 352,0 352,-24"/>
-<text text-anchor="middle" x="315.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mtprng_init</text>
-</a>
-</g>
-</g>
-<!-- proc~mtprng_rand64&#45;&gt;proc~mtprng_init -->
-<g id="call~~graph~~CallGraph_edge1" class="edge">
-<title>proc~mtprng_rand64&#45;&gt;proc~mtprng_init</title>
-<path fill="none" stroke="#000000" d="M232.07,-24.78C244.02,-22.93 256.85,-20.94 268.76,-19.09"/>
-<polygon fill="#000000" stroke="#000000" points="269.58,-22.51 278.93,-17.51 268.51,-15.59 269.58,-22.51"/>
-</g>
 <!-- proc~generate_uuid -->
-<g id="call~~graph~~CallGraph_node4" class="node">
+<g id="call~~graph~~CallGraph_node2" class="node">
 <title>proc~generate_uuid</title>
-<g id="a_call~~graph~~CallGraph_node4"><a xlink:href=".././proc/generate_uuid.html" xlink:title="generate_uuid">
+<g id="a_call~~graph~~CallGraph_node2"><a xlink:href=".././proc/generate_uuid.html" xlink:title="generate_uuid">
 <polygon fill="#d94e8f" stroke="#d94e8f" points="90,-44 0,-44 0,-20 90,-20 90,-44"/>
 <text text-anchor="middle" x="45" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">generate_uuid</text>
 </a>
 </g>
 </g>
 <!-- proc~generate_uuid&#45;&gt;proc~get_utc_since_1582 -->
-<g id="call~~graph~~CallGraph_edge4" class="edge">
+<g id="call~~graph~~CallGraph_edge3" class="edge">
 <title>proc~generate_uuid&#45;&gt;proc~get_utc_since_1582</title>
 <path fill="none" stroke="#000000" d="M85.4,-44.04C100.65,-48.69 118.27,-54.07 134.33,-58.98"/>
 <polygon fill="#000000" stroke="#000000" points="133.51,-62.39 144.09,-61.96 135.55,-55.69 133.51,-62.39"/>
+</g>
+<!-- proc~mtprng_rand64 -->
+<g id="call~~graph~~CallGraph_node3" class="node">
+<title>proc~mtprng_rand64</title>
+<g id="a_call~~graph~~CallGraph_node3"><a xlink:href=".././proc/mtprng_rand64.html" xlink:title="mtprng_rand64">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="232,-44 137,-44 137,-20 232,-20 232,-44"/>
+<text text-anchor="middle" x="184.5" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mtprng_rand64</text>
+</a>
+</g>
 </g>
 <!-- proc~generate_uuid&#45;&gt;proc~mtprng_rand64 -->
 <g id="call~~graph~~CallGraph_edge2" class="edge">
@@ -197,11 +182,26 @@ Uses the Mersenne Twister algorithm</p></td></tr>
 <path fill="none" stroke="#000000" d="M90.26,-32C101.92,-32 114.65,-32 126.86,-32"/>
 <polygon fill="#000000" stroke="#000000" points="126.95,-35.5 136.95,-32 126.95,-28.5 126.95,-35.5"/>
 </g>
+<!-- proc~mtprng_init -->
+<g id="call~~graph~~CallGraph_node4" class="node">
+<title>proc~mtprng_init</title>
+<g id="a_call~~graph~~CallGraph_node4"><a xlink:href=".././proc/mtprng_init.html" xlink:title="mtprng_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="352,-24 279,-24 279,0 352,0 352,-24"/>
+<text text-anchor="middle" x="315.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mtprng_init</text>
+</a>
+</g>
+</g>
 <!-- proc~generate_uuid&#45;&gt;proc~mtprng_init -->
-<g id="call~~graph~~CallGraph_edge3" class="edge">
+<g id="call~~graph~~CallGraph_edge1" class="edge">
 <title>proc~generate_uuid&#45;&gt;proc~mtprng_init</title>
 <path fill="none" stroke="#000000" d="M83.86,-19.93C97.05,-16.3 112.04,-12.8 126,-11 174.36,-4.76 230.28,-6.12 268.58,-8.35"/>
 <polygon fill="#000000" stroke="#000000" points="268.69,-11.86 278.89,-9 269.13,-4.88 268.69,-11.86"/>
+</g>
+<!-- proc~mtprng_rand64&#45;&gt;proc~mtprng_init -->
+<g id="call~~graph~~CallGraph_edge4" class="edge">
+<title>proc~mtprng_rand64&#45;&gt;proc~mtprng_init</title>
+<path fill="none" stroke="#000000" d="M232.07,-24.78C244.02,-22.93 256.85,-20.94 268.76,-19.09"/>
+<polygon fill="#000000" stroke="#000000" points="269.58,-22.51 278.93,-17.51 268.51,-15.59 269.58,-22.51"/>
 </g>
 </g>
 </svg>
