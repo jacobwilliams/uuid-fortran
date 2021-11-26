@@ -1,7 +1,7 @@
-UUID-Fortran
+![uuid-fortran](media/logo.png)
 ============
 
-A modern Fortran module for generating UUIDs.
+UUID-Fortran: A modern Fortran module for generating UUIDs.
 
 ## Status
 
