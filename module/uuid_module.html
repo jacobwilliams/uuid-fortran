@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="Fortran module for generating UUIDs">
+    
+    <meta name="author" content="Jacob Williams" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>uuid_module &ndash; uuid-fortran</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">uuid-fortran </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../sourcefile/uuid_module.f90.html">Source File</a></li>
+        
+        
+        
+            <li><a href="../lists/modules.html">Modules</a></li>
+        
+            
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+            <li><a href="../lists/types.html">Derived Types</a></li>
+        
+               
+        
+        
+            </ul>
+        
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../sourcefile/uuid_module.f90.html">Source File</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+
+
+
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>uuid_module 
+    <small>Module</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title="100.0% of total for modules and submodules.">180 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/uuid_module.f90"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/uuid_module.f90.html'>uuid_module.f90</a></li>
+    
+  
+     <li class="active">uuid_module</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-int64">INT64</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-int32">INT32</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-mtprng_n">mtprng_N</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-mtprng_m">mtprng_M</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-hexdigits">hexdigits</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-rng_state">rng_state</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-initialized">initialized</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-values_save">values_save</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-hires_count">hires_count</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-clock_seq">clock_seq</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-0">Derived Types</a></h3></div>
+  <div id="types-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/uuid_module.html#type-mtprng_state">mtprng_state</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#funcs-0">Functions</a></h3></div>
+  <div id="funcs-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/uuid_module.html#proc-generate_uuid">generate_uuid</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#proc-get_utc_since_1582">get_utc_since_1582</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#proc-mtprng_rand64">mtprng_rand64</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-0">Subroutines</a></h3></div>
+  <div class="list-group">
+    <div id="subs-0" class="panel-collapse collapse">
+      
+      <a class="list-group-item" href="../module/uuid_module.html#proc-mtprng_init">mtprng_init</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    <p>UUID generation</p>
+<p>This generates UUIDs according to RFC 4122
+  Only types 1 (time-based) and 4 (pseudo-RNG-based) are implemented.</p>
+<p>UUIDs (see RFC 4122) are Universally Unique IDentifiers.
+  They are a 128-bit number, represented as a 36-character string. For example:</p>
+<div class="codehilite"><pre><span></span><code> f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+</code></pre></div>
+
+<h3>See also</h3>
+<ul>
+<li>Based on code from Fox: A Fortran XML Library
+    https://github.com/andreww/fox</li>
+<li>http://homepages.see.leeds.ac.uk/~earawa/FoX/DoX/FoX_utils.html</li>
+</ul>
+<h3>Licenses</h3>
+<hr>
+<h2>FoX - Fortran XML library</h2>
+<p>FoX was originally derived from the xmlf90 codebase,
+ (c) Alberto Garcia &amp; Jon Wakelin, 2003-2004.</p>
+<p>FoX also includes externally-written code from
+ Scott Ladd <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#99;&#111;&#116;&#116;&#46;&#108;&#97;&#100;&#100;&#64;&#99;&#111;&#121;&#111;&#116;&#101;&#103;&#117;&#108;&#99;&#104;&#46;&#99;&#111;&#109;">&#115;&#99;&#111;&#116;&#116;&#46;&#108;&#97;&#100;&#100;&#64;&#99;&#111;&#121;&#111;&#116;&#101;&#103;&#117;&#108;&#99;&#104;&#46;&#99;&#111;&#109;</a>, which is licensed
+ as shown in the file utils/fox_m_utils_mtprng.f90</p>
+<p>This version of FoX is:
+ (c) 2005-2009 Toby White <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#111;&#119;&#64;&#117;&#115;&#122;&#108;&#97;&#46;&#109;&#101;&#46;&#117;&#107;">&#116;&#111;&#119;&#64;&#117;&#115;&#122;&#108;&#97;&#46;&#109;&#101;&#46;&#117;&#107;</a>
+ (c) 2007-2009 Gen-Tao Chiang <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#103;&#116;&#99;&#50;&#53;&#64;&#99;&#97;&#109;&#46;&#97;&#99;&#46;&#117;&#107;">&#103;&#116;&#99;&#50;&#53;&#64;&#99;&#97;&#109;&#46;&#97;&#99;&#46;&#117;&#107;</a>
+ (c) 2008-2012 Andrew Walker <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#46;&#119;&#97;&#108;&#107;&#101;&#114;&#64;&#117;&#99;&#108;&#46;&#97;&#99;&#46;&#117;&#107;">&#97;&#46;&#119;&#97;&#108;&#107;&#101;&#114;&#64;&#117;&#99;&#108;&#46;&#97;&#99;&#46;&#117;&#107;</a></p>
+<p>All rights reserved.</p>
+<ul>
+<li>
+<p>Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:</p>
+</li>
+<li>
+<p>Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.</p>
+</li>
+<li>
+<p>Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.</p>
+</li>
+<li>
+<p>Neither the name of the copyright holder nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.</p>
+</li>
+</ul>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT
+ OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<hr>
+<h2>mtprng.f90 (a Fortran 95 module)</h2>
+<p>An implementation of the Mersenne Twister algorithm for generating
+  psuedo-random sequences.</p>
+<p>ORIGINAL ALGORITHM COPYRIGHT
+  ============================
+  Copyright (C) 1997,2002 Makoto Matsumoto and Takuji Nishimura.
+  Any feedback is very welcome. For any question, comments, see
+  http://www.math.keio.ac.jp/matumoto/emt.html or email
+  matumoto@math.keio.ac.jp</p>
+<p>COPYRIGHT NOTICE, DISCLAIMER, and LICENSE:</p>
+<p>This notice applies <em>only</em> to this specific expression of this
+  algorithm, and does not imply ownership or invention of the
+  implemented algorithm.</p>
+<p>If you modify this file, you may insert additional notices
+  immediately following this sentence.</p>
+<p>Copyright 2001, 2002, 2004 Scott Robert Ladd.
+  All rights reserved, except as noted herein.</p>
+<p>This computer program source file is supplied "AS IS". Scott Robert
+  Ladd (hereinafter referred to as "Author") disclaims all warranties,
+  expressed or implied, including, without limitation, the warranties
+  of merchantability and of fitness for any purpose. The Author
+  assumes no liability for direct, indirect, incidental, special,
+  exemplary, or consequential damages, which may result from the use
+  of this software, even if advised of the possibility of such damage.</p>
+<p>The Author hereby grants anyone permission to use, copy, modify, and
+  distribute this source code, or portions hereof, for any purpose,
+  without fee, subject to the following restrictions:</p>
+<div class="codehilite"><pre><span></span><code>  1. The origin of this source code must not be misrepresented.
+
+  2. Altered versions must be plainly marked as such and must not
+     be misrepresented as being the original source.
+
+  3. This Copyright notice may not be removed or altered from any
+     source or altered source distribution.
+</code></pre></div>
+
+<p>The Author specifically permits (without fee) and encourages the use
+  of this source code for entertainment, education, or decoration. If
+  you use this source code in a product, acknowledgment is not required
+  but would be appreciated.</p>
+      
+    
+  
+
+    
+    
+
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+      
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-int64">INT64</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-int32">INT32</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-mtprng_n">mtprng_N</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-mtprng_m">mtprng_M</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-hexdigits">hexdigits</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-rng_state">rng_state</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-initialized">initialized</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-values_save">values_save</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-hires_count">hires_count</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#variable-clock_seq">clock_seq</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-1">Derived Types</a></h3></div>
+  <div id="types-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/uuid_module.html#type-mtprng_state">mtprng_state</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#funcs-1">Functions</a></h3></div>
+  <div id="funcs-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/uuid_module.html#proc-generate_uuid">generate_uuid</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#proc-get_utc_since_1582">get_utc_since_1582</a>
+      
+      <a class="list-group-item" href="../module/uuid_module.html#proc-mtprng_rand64">mtprng_rand64</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-1">Subroutines</a></h3></div>
+  <div class="list-group">
+    <div id="subs-1" class="panel-collapse collapse">
+      
+      <a class="list-group-item" href="../module/uuid_module.html#proc-mtprng_init">mtprng_init</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+    
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-int64"></span>integer,</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>INT64</strong></td><td> =</td><td>selected_int_kind(18)</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-int32"></span>integer,</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>INT32</strong></td><td> =</td><td>selected_int_kind(9)</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-mtprng_n"></span>integer(kind=INT32),</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>mtprng_N</strong></td><td> =</td><td>624_INT32</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-mtprng_m"></span>integer(kind=INT32),</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>mtprng_M</strong></td><td> =</td><td>397_INT32</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-hexdigits"></span>character(len=1),</td>
+  
+  <td>private,</td>
+  <td>parameter, dimension(0:15)</td><td>::</td>
+  <td><strong>hexdigits</strong></td><td> =</td><td>['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-rng_state"></span>type(<a href='../type/mtprng_state.html'>mtprng_state</a>),</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>rng_state</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-initialized"></span>logical,</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>initialized</strong></td><td> =</td><td>.false.</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-values_save"></span>integer,</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>values_save</strong></td><td> =</td><td>0</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-hires_count"></span>integer(kind=INT32),</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>hires_count</strong></td><td> =</td><td>0</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-clock_seq"></span>integer,</td>
+  
+  <td>private,</td>
+  <td>save</td><td>::</td>
+  <td><strong>clock_seq</strong></td><td> =</td><td>0</td><td><p>clock-seq holds a random number
+constant for the lifetime of the program
+using this module. That's the best we
+can do per S 4.1.5</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+
+    
+    
+    
+    <section>
+     <h2>Derived Types</h2>
+   
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-mtprng_state"></span><h3>type, private :: <a href='../type/mtprng_state.html'>mtprng_state</a>
+    
+  </h3></div>
+  <div class="panel-body">
+    
+     
+     <h4>Components</h4>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-mti"></span>integer(kind=INT32),</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>mti</strong></td><td> =</td><td>-1_INT32</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-mt"></span>integer(kind=INT64),</td>
+  
+  <td>private,</td>
+  <td>dimension(0:mtprng_N-1)</td><td>::</td>
+  <td><strong>mt</strong></td><td> =</td><td>0_INT64</td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+     
+     
+          
+     
+  </div>
+</div>
+
+     
+    </section>
+  <br>
+    
+    
+     
+    <section>
+    <h2>Functions</h2>
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-generate_uuid"></span><h3>
+public function <a href='../proc/generate_uuid.html'>generate_uuid</a>(version) result(uuid)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>version</strong></td><td><p>identifies the version of UUID to be
+used (see section 4.1.3 of the RFC).
+Only versions 0, 1, and 4 are supported.
+Version 0 generates a nil UUID; version 1 a
+time-based UUID, and version 4 a
+pseudo-randomly-generated UUID.</p>
+<p>Version 1 is the default, and is recommended.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=36)
+  </small></h4>
+  
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_utc_since_1582"></span><h3>
+private function <a href='../proc/get_utc_since_1582.html'>get_utc_since_1582</a>(values) result(ns)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>This subroutine is a little broken. It only works
+for times after 1/1/2006 and takes no account
+of any future leapseconds. It ought to serve regardless.</p><a href="../proc/get_utc_since_1582.html" class="pull-right"><emph>Read more&hellip;</emph></a>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in),</td>
+  <td></td>
+  
+  <td>dimension(8)</td><td>::</td>
+  <td><strong>values</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>integer(kind=INT64)
+  </small></h4>
+  
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-mtprng_rand64"></span><h3>
+private function <a href='../proc/mtprng_rand64.html'>mtprng_rand64</a>(state) result(r)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Obtain the next 32-bit integer in the psuedo-random sequence
+Uses the Mersenne Twister algorithm</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/mtprng_state.html'>mtprng_state</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>state</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>integer(kind=INT64)
+  </small></h4>
+  
+    
+
+  </div>
+  </div>
+
+    
+    </section>
+    <br>
+    
+
+    
+    <section>
+    <h2>Subroutines</h2>
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-mtprng_init"></span><h3>
+private subroutine <a href='../proc/mtprng_init.html'>mtprng_init</a>(seed, state)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Initializes the generator with "seed"</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=INT32),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>seed</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/mtprng_state.html'>mtprng_state</a>),</td>
+  <td>intent(out)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>state</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    </section>    
+    <br>
+    
+    
+    
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><p>uuid-fortran was developed by Jacob Williams<br>&copy; 2021 
+                                          </p>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            
+            
+          </p>
+        </div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>
