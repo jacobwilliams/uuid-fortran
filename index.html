@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="Fortran module for generating UUIDs">
-    
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="./favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="./css/pygments.css" rel="stylesheet">
     <link href="./css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/local.css" rel="stylesheet">
-    
     <link  href="./tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,54 +43,25 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="./sourcefile/uuid_module.f90.html">Source File</a></li>
-        
-        
-        
             <li><a href="./lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="./lists/procedures.html">Procedures</a></li>
-        
-               
-            <li><a href="./lists/types.html">Derived Types</a></li>
-        
-               
-        
-        
+                   <li><a href="./lists/types.html">Derived Types</a></li>
+       
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="./sourcefile/uuid_module.f90.html">Source File</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="./lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="./lists/procedures.html">Procedures</a></li>
-
-                             
-<li class="visible-xs hidden-sm visible-lg"><a href="./lists/types.html">Derived Types</a></li>
-
-
-
-
+                             <li class="visible-xs hidden-sm visible-lg"><a href="./lists/types.html">Derived Types</a></li>
           </ul>
-        
         <form action="./search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -104,42 +70,30 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
         <p>Fortran module for generating UUIDs</p>
-        	 
 	<p> Find us on&hellip;</p>
         <p>
-			 
           <a class="btn btn-lg btn-primary" href="https://github.com/jacobwilliams/uuid-fortran" role="button">GitHub</a>
-			 
-			 
-			 
-			 
-			 
-	         
-			 
         </p>
       </div>
 
       <div class="row" id='text'>
-		  
         <div class="col-md-8">
-		  
           <h1>uuid-fortran</h1>
-          <h3>Brief description</h3>
-<h1><img alt="uuid-fortran" src="media/logo.png"></h1>
+          <h1><img alt="uuid-fortran" src="media/logo.png"></h1>
 <p>UUID-Fortran: A modern Fortran module for generating UUIDs.</p>
-<h2>Status</h2>
-<p><img alt="Build Status" src="https://github.com/jacobwilliams/uuid-fortran/actions/workflows/CI.yml/badge.svg"></p>
-<h2>Description</h2>
+<h3>Status</h3>
+<p><a href="https://github.com/jacobwilliams/uuid-fortran/actions"><img alt="CI Status" src="https://github.com/jacobwilliams/uuid-fortran/actions/workflows/CI.yml/badge.svg"></a>
+<a href="https://github.com/jacobwilliams/uuid-fortran/releases/latest"><img alt="GitHub release" src="https://img.shields.io/github/release/jacobwilliams/uuid-fortran.svg?style=plastic"></a>
+<a href="https://codecov.io/gh/jacobwilliams/uuid-fortran"><img alt="codecov" src="https://codecov.io/gh/jacobwilliams/uuid-fortran/branch/master/graph/badge.svg?token=43HK33CSMY"></a></p>
+<h3>Description</h3>
 <p>This is basically just the UUID generation code from the <a href="https://github.com/andreww/fox">Fox library</a>/</p>
 <p>This code is hosted on GitHub at: https://github.com/jacobwilliams/uuid-fortran</p>
 <h3>Building</h3>
@@ -149,11 +103,21 @@ fpm test --profile release
 </code></pre></div>
 
 <p>To use <code>uuid-fortran</code> within your fpm project, add the following to your <code>fpm.toml</code> file:</p>
-<div class="codehilite"><pre><span></span><code><span class="k">[dependencies]</span>
-<span class="n">uuid-fortran</span> <span class="o">=</span> <span class="p">{</span> <span class="n">git</span><span class="o">=</span><span class="s">&quot;https://github.com/jacobwilliams/uuid-fortran.git&quot;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span></span><code><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">uuid-fortran</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="o">=</span><span class="s">&quot;https://github.com/jacobwilliams/uuid-fortran.git&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 
 <p>To generate the documentation using <a href="https://github.com/Fortran-FOSS-Programmers/ford">ford</a>, run: <code>ford ford.md</code></p>
+<p>To use <code>uuid-fortran</code> within your fpm project, add the following to your <code>fpm.toml</code> file:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">uuid-fortran</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="o">=</span><span class="s">&quot;https://github.com/jacobwilliams/uuid-fortran.git&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<p>Or to use a specific version:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">uuid-fortran</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="o">=</span><span class="s">&quot;https://github.com/jacobwilliams/uuid-fortran.git&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;1.0.0&quot;</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
 <h3>Documentation</h3>
 <ul>
 <li>The API documentation for the current <code>master</code> branch can be found <a href="https://jacobwilliams.github.io/uuid-fortran/">here</a>.  This is generated by processing the source files with <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>.</li>
@@ -163,101 +127,59 @@ fpm test --profile release
 <li><a href="https://datatracker.ietf.org/doc/html/rfc4122">A Universally Unique IDentifier (UUID) URN Namespace</a> [RFC 4122]</li>
 <li><a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">Universally unique identifier</a> [Wikipedia]</li>
 </ul>
-<h2>License</h2>
+<h3>License</h3>
 <ul>
 <li>See the LICENSE file for license information.</li>
 </ul>
         </div>
-		  
         <div class="col-md-4">
 	  <div class="well">
           <h2>Developer Info</h2>
           <h4>Jacob Williams</h4>
           
-          
-			   
             <div class="text-center"><div class="btn-group" role="group">
-              
-              
-              
               <a class="btn btn-lg btn-primary" href="https://github.com/jacobwilliams"><i class="fa fa-github fa-lg"></i></a>
-              
-              
-				  
-              
-              
-              
-              
             </div></div>
-            
        </div>
        </div>
-       
       </div>
-      
-      
-      
-      
-      
-      
-		
-        
       <div class="row">
-        
         <div class="col-xs-6 col-sm-3">
               <h3>Source Files</h3>
-              <ul>
-                    <li><a href='./sourcefile/uuid_module.f90.html'>uuid_module.f90</a></li>
-                  </ul>
+              <ul>                    <li><a href='./sourcefile/uuid_module.f90.html'>uuid_module.f90</a></li>
+</ul>
           </div>
-        
-          
 		  <div class="col-xs-6 col-sm-3">
               <h3>Modules</h3>
-              <ul>
-                    <li><a href='./module/uuid_module.html'>uuid_module</a></li>
-                  </ul>
+              <ul>                    <li><a href='./module/uuid_module.html'>uuid_module</a></li>
+</ul>
           </div>
-          
-          
 		  <div class="col-xs-6 col-sm-3">
               <h3>Procedures</h3>
-              <ul>
-                    <li><a href='./proc/generate_uuid.html'>generate_uuid</a></li>
-                  
+              <ul>                    <li><a href='./proc/generate_uuid.html'>generate_uuid</a></li>
                     <li><a href='./proc/get_utc_since_1582.html'>get_utc_since_1582</a></li>
-                  
                     <li><a href='./proc/mtprng_init.html'>mtprng_init</a></li>
-                  
                     <li><a href='./proc/mtprng_rand64.html'>mtprng_rand64</a></li>
-                  </ul>
+</ul>
           </div>
-          
-          
 		  <div class="col-xs-6 col-sm-3">
               <h3>Derived Types</h3>
-              <ul>
-                    <li><a href='./type/mtprng_state.html'>mtprng_state</a></li>
-                  </ul>
+              <ul>                    <li><a href='./type/mtprng_state.html'>mtprng_state</a></li>
+</ul>
           </div>
-          
       </div>
-      
-
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>uuid-fortran was developed by Jacob Williams<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>uuid-fortran was developed by Jacob Williams<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-            
-            
           </p>
         </div>
       </div>
@@ -285,14 +207,11 @@ fpm test --profile release
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="./tipuesearch/tipuesearch_content.js"></script>
     <script src="./tipuesearch/tipuesearch_set.js"></script>
     <script src="./tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>

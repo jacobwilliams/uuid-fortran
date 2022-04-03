@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="Fortran module for generating UUIDs">
-    
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,54 +43,25 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../sourcefile/uuid_module.f90.html">Source File</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-               
-            <li><a href="../lists/types.html">Derived Types</a></li>
-        
-               
-        
-        
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+       
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../sourcefile/uuid_module.f90.html">Source File</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-                             
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
-
-
-
-
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
           </ul>
-        
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -104,51 +70,29 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
-  
   <div class="row">
     <h1>generate_uuid
       <small>Function</small>
-    
     </h1>
-    
-<div class="row">
+    <div class="row">
   <div class="col-lg-12">
 <div class="well well-sm">
   <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     
-     
-     
-     
-     
-    
-    
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
     title="58.8% of total for procedures.">94 statements</a>
      </li> 
-     
-     
-     
     <li><i class="fa fa-code"></i><a href="../src/uuid_module.f90"> Source File</a></li>
-     
-     
   </ul>
   <ol class="breadcrumb in-well text-right">
-  
-    
      <li><a href='../sourcefile/uuid_module.f90.html'>uuid_module.f90</a></li>
-    
      <li><a href='../module/uuid_module.html'>uuid_module</a></li>
-    
-  
      <li class="active">generate_uuid</li>
   </ol>
 </div>
@@ -164,32 +108,9 @@
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    
-<div id="sidebar">
-  
-<h3>Contents</h3>
+    <div id="sidebar">
+  <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
@@ -197,48 +118,23 @@
   </div>
 </div>
 
-
-
 </div>
 
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>
-public function generate_uuid(version) result(uuid)
+    <h2>public function generate_uuid(version) result(uuid)</h2>
     
-    
-   
-</h2>
-    
-  
 
-
-    
 
     <h3>Arguments</h3>
-    
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
+      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-version"></span>integer,</td>
-  <td>intent(in),</td>
-  <td>optional</td>
-  
-  <td></td><td>::</td>
+<td>intent(in),</td>
+  <td>optional</td>  <td></td><td>::</td>
   <td><strong>version</strong></td><td><p>identifies the version of UUID to be
 used (see section 4.1.3 of the RFC).
 Only versions 0, 1, and 4 are supported.
@@ -246,27 +142,13 @@ Version 0 generates a nil UUID; version 1 a
 time-based UUID, and version 4 a
 pseudo-randomly-generated UUID.</p>
 <p>Version 1 is the default, and is recommended.</p></td>
-  
 </tr>
-
 </tbody>
 </table>
 
-    
-    
-    
-    
-    
-    
-    
-   <h3>Return Value <small><span class="anchor" id="variable-uuid"></span>character(len=36)
-  </small></h3>
-    
-    
+   <h3>Return Value <small><span class="anchor" id="variable-uuid"></span>character(len=36)</small></h3>
     
     <br>
-    
-    
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Calls</h3>
@@ -286,59 +168,59 @@ pseudo-randomly-generated UUID.</p>
 <!-- proc~generate_uuid -->
 <g id="proc~~generate_uuid~~CallsGraph_node1" class="node">
 <title>proc~generate_uuid</title>
-<polygon fill="none" stroke="black" points="90,-66 0,-66 0,-42 90,-42 90,-66"/>
-<text text-anchor="middle" x="45" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50">generate_uuid</text>
+<polygon fill="none" stroke="black" points="90,-44 0,-44 0,-20 90,-20 90,-44"/>
+<text text-anchor="middle" x="45" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50">generate_uuid</text>
 </g>
-<!-- proc~mtprng_init -->
+<!-- proc~get_utc_since_1582 -->
 <g id="proc~~generate_uuid~~CallsGraph_node2" class="node">
-<title>proc~mtprng_init</title>
-<g id="a_proc~~generate_uuid~~CallsGraph_node2"><a xlink:href=".././proc/mtprng_init.html" xlink:title="mtprng_init">
-<polygon fill="#d9534f" stroke="#d9534f" points="352,-86 279,-86 279,-62 352,-62 352,-86"/>
-<text text-anchor="middle" x="315.5" y="-71.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mtprng_init</text>
+<title>proc~get_utc_since_1582</title>
+<g id="a_proc~~generate_uuid~~CallsGraph_node2"><a xlink:href=".././proc/get_utc_since_1582.html" xlink:title="get_utc_since_1582">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="243,-86 126,-86 126,-62 243,-62 243,-86"/>
+<text text-anchor="middle" x="184.5" y="-71.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_utc_since_1582</text>
 </a>
 </g>
 </g>
-<!-- proc~generate_uuid&#45;&gt;proc~mtprng_init -->
+<!-- proc~generate_uuid&#45;&gt;proc~get_utc_since_1582 -->
 <g id="proc~~generate_uuid~~CallsGraph_edge1" class="edge">
-<title>proc~generate_uuid&#45;&gt;proc~mtprng_init</title>
-<path fill="none" stroke="#000000" d="M83.86,-66.07C97.05,-69.7 112.04,-73.2 126,-75 174.36,-81.24 230.28,-79.88 268.58,-77.65"/>
-<polygon fill="#000000" stroke="#000000" points="269.13,-81.12 278.89,-77 268.69,-74.14 269.13,-81.12"/>
+<title>proc~generate_uuid&#45;&gt;proc~get_utc_since_1582</title>
+<path fill="none" stroke="#000000" d="M85.4,-44.04C100.65,-48.69 118.27,-54.07 134.33,-58.98"/>
+<polygon fill="#000000" stroke="#000000" points="133.51,-62.39 144.09,-61.96 135.55,-55.69 133.51,-62.39"/>
 </g>
 <!-- proc~mtprng_rand64 -->
 <g id="proc~~generate_uuid~~CallsGraph_node3" class="node">
 <title>proc~mtprng_rand64</title>
 <g id="a_proc~~generate_uuid~~CallsGraph_node3"><a xlink:href=".././proc/mtprng_rand64.html" xlink:title="mtprng_rand64">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="232,-66 137,-66 137,-42 232,-42 232,-66"/>
-<text text-anchor="middle" x="184.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mtprng_rand64</text>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="232,-44 137,-44 137,-20 232,-20 232,-44"/>
+<text text-anchor="middle" x="184.5" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mtprng_rand64</text>
 </a>
 </g>
 </g>
 <!-- proc~generate_uuid&#45;&gt;proc~mtprng_rand64 -->
-<g id="proc~~generate_uuid~~CallsGraph_edge2" class="edge">
+<g id="proc~~generate_uuid~~CallsGraph_edge3" class="edge">
 <title>proc~generate_uuid&#45;&gt;proc~mtprng_rand64</title>
-<path fill="none" stroke="#000000" d="M90.26,-54C101.92,-54 114.65,-54 126.86,-54"/>
-<polygon fill="#000000" stroke="#000000" points="126.95,-57.5 136.95,-54 126.95,-50.5 126.95,-57.5"/>
+<path fill="none" stroke="#000000" d="M90.26,-32C101.92,-32 114.65,-32 126.86,-32"/>
+<polygon fill="#000000" stroke="#000000" points="126.95,-35.5 136.95,-32 126.95,-28.5 126.95,-35.5"/>
 </g>
-<!-- proc~get_utc_since_1582 -->
+<!-- proc~mtprng_init -->
 <g id="proc~~generate_uuid~~CallsGraph_node4" class="node">
-<title>proc~get_utc_since_1582</title>
-<g id="a_proc~~generate_uuid~~CallsGraph_node4"><a xlink:href=".././proc/get_utc_since_1582.html" xlink:title="get_utc_since_1582">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="243,-24 126,-24 126,0 243,0 243,-24"/>
-<text text-anchor="middle" x="184.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_utc_since_1582</text>
+<title>proc~mtprng_init</title>
+<g id="a_proc~~generate_uuid~~CallsGraph_node4"><a xlink:href=".././proc/mtprng_init.html" xlink:title="mtprng_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="352,-24 279,-24 279,0 352,0 352,-24"/>
+<text text-anchor="middle" x="315.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mtprng_init</text>
 </a>
 </g>
 </g>
-<!-- proc~generate_uuid&#45;&gt;proc~get_utc_since_1582 -->
-<g id="proc~~generate_uuid~~CallsGraph_edge3" class="edge">
-<title>proc~generate_uuid&#45;&gt;proc~get_utc_since_1582</title>
-<path fill="none" stroke="#000000" d="M85.4,-41.96C100.65,-37.31 118.27,-31.93 134.33,-27.02"/>
-<polygon fill="#000000" stroke="#000000" points="135.55,-30.31 144.09,-24.04 133.51,-23.61 135.55,-30.31"/>
+<!-- proc~generate_uuid&#45;&gt;proc~mtprng_init -->
+<g id="proc~~generate_uuid~~CallsGraph_edge2" class="edge">
+<title>proc~generate_uuid&#45;&gt;proc~mtprng_init</title>
+<path fill="none" stroke="#000000" d="M83.86,-19.93C97.05,-16.3 112.04,-12.8 126,-11 174.36,-4.76 230.28,-6.12 268.58,-8.35"/>
+<polygon fill="#000000" stroke="#000000" points="268.69,-11.86 278.89,-9 269.13,-4.88 268.69,-11.86"/>
 </g>
 <!-- proc~mtprng_rand64&#45;&gt;proc~mtprng_init -->
 <g id="proc~~generate_uuid~~CallsGraph_edge4" class="edge">
 <title>proc~mtprng_rand64&#45;&gt;proc~mtprng_init</title>
-<path fill="none" stroke="#000000" d="M232.07,-61.22C244.02,-63.07 256.85,-65.06 268.76,-66.91"/>
-<polygon fill="#000000" stroke="#000000" points="268.51,-70.41 278.93,-68.49 269.58,-63.49 268.51,-70.41"/>
+<path fill="none" stroke="#000000" d="M232.07,-24.78C244.02,-22.93 256.85,-20.94 268.76,-19.09"/>
+<polygon fill="#000000" stroke="#000000" points="269.58,-22.51 278.93,-17.51 268.51,-15.59 269.58,-22.51"/>
 </g>
 </g>
 </svg>
@@ -403,35 +285,11 @@ pseudo-randomly-generated UUID.</p>
     </div></div></div></div>
       </div>
     </div>
-     
-     
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
-      
-<h3>Contents</h3>
+      <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
@@ -439,203 +297,188 @@ pseudo-randomly-generated UUID.</p>
   </div>
 </div>
 
-
-
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-    
 
-    
-    
-    
     
     
 
     
     
-    
-    
-    
 
 
-    
-    
     
     <section>
     <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span>    <span class="k">function </span><span class="n">generate_uuid</span><span class="p">(</span><span class="n">version</span><span class="p">)</span> <span class="k">result</span><span class="p">(</span><span class="n">uuid</span><span class="p">)</span>
+    <div class="highlight"><pre><span></span><span class="w">    </span><span class="k">function </span><span class="n">generate_uuid</span><span class="p">(</span><span class="n">version</span><span class="p">)</span><span class="w"> </span><span class="k">result</span><span class="p">(</span><span class="n">uuid</span><span class="p">)</span><span class="w"></span>
 
-        <span class="kt">integer</span><span class="p">,</span> <span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span> <span class="k">optional</span> <span class="kd">::</span> <span class="n">version</span>    <span class="c">!! identifies the version of UUID to be</span>
-                                                    <span class="c">!! used (see section 4.1.3 of the RFC).</span>
-                                                    <span class="c">!! Only versions 0, 1, and 4 are supported.</span>
-                                                    <span class="c">!! Version 0 generates a nil UUID; version 1 a</span>
-                                                    <span class="c">!! time-based UUID, and version 4 a</span>
-                                                    <span class="c">!! pseudo-randomly-generated UUID.</span>
-                                                    <span class="c">!!</span>
-                                                    <span class="c">!! Version 1 is the default, and is recommended.</span>
+<span class="w">        </span><span class="kt">integer</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">version</span><span class="w">    </span><span class="c">!! identifies the version of UUID to be</span>
+<span class="w">                                                    </span><span class="c">!! used (see section 4.1.3 of the RFC).</span>
+<span class="w">                                                    </span><span class="c">!! Only versions 0, 1, and 4 are supported.</span>
+<span class="w">                                                    </span><span class="c">!! Version 0 generates a nil UUID; version 1 a</span>
+<span class="w">                                                    </span><span class="c">!! time-based UUID, and version 4 a</span>
+<span class="w">                                                    </span><span class="c">!! pseudo-randomly-generated UUID.</span>
+<span class="w">                                                    </span><span class="c">!!</span>
+<span class="w">                                                    </span><span class="c">!! Version 1 is the default, and is recommended.</span>
 
-        <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">36</span><span class="p">)</span> <span class="kd">::</span> <span class="n">uuid</span>
+<span class="w">        </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">36</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">uuid</span><span class="w"></span>
 
-        <span class="kt">integer</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">INT64</span><span class="p">)</span> <span class="kd">::</span> <span class="n">timestamp</span><span class="p">,</span> <span class="n">node</span>
-        <span class="kt">integer</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">INT32</span><span class="p">)</span> <span class="kd">::</span> <span class="n">clock_sequence</span>
-        <span class="kt">integer</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">INT32</span><span class="p">)</span> <span class="kd">::</span> <span class="n">time_low</span><span class="p">,</span> <span class="n">time_mid</span><span class="p">,</span> <span class="n">time_hi_and_version</span>
-        <span class="kt">integer</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">INT32</span><span class="p">)</span> <span class="kd">::</span> <span class="n">clk_seq_hi_res</span><span class="p">,</span> <span class="n">clk_seq_low</span>
-        <span class="kt">integer</span><span class="p">,</span><span class="k">dimension</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="kd">::</span> <span class="n">values</span> <span class="c">!! must be default for `date_and_time`</span>
-        <span class="kt">integer</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">INT32</span><span class="p">)</span> <span class="kd">::</span> <span class="n">variant</span><span class="p">,</span> <span class="n">v</span>
+<span class="w">        </span><span class="kt">integer</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">INT64</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">timestamp</span><span class="p">,</span><span class="w"> </span><span class="n">node</span><span class="w"></span>
+<span class="w">        </span><span class="kt">integer</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">INT32</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">clock_sequence</span><span class="w"></span>
+<span class="w">        </span><span class="kt">integer</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">INT32</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">time_low</span><span class="p">,</span><span class="w"> </span><span class="n">time_mid</span><span class="p">,</span><span class="w"> </span><span class="n">time_hi_and_version</span><span class="w"></span>
+<span class="w">        </span><span class="kt">integer</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">INT32</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">clk_seq_hi_res</span><span class="p">,</span><span class="w"> </span><span class="n">clk_seq_low</span><span class="w"></span>
+<span class="w">        </span><span class="kt">integer</span><span class="p">,</span><span class="k">dimension</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">values</span><span class="w"> </span><span class="c">!! must be default for `date_and_time`</span>
+<span class="w">        </span><span class="kt">integer</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">INT32</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">variant</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="w"></span>
 
-        <span class="k">if</span> <span class="p">(.</span><span class="nb">not</span><span class="p">.</span><span class="n">initialized</span><span class="p">)</span> <span class="k">then</span>
-            <span class="c">! Use the current date and time to init mtprng</span>
-            <span class="c">! but this gives limited varaibility, so mix</span>
-            <span class="c">! the result up.  Can we do better? In any</span>
-            <span class="c">! case, this gets passed through a quick</span>
-            <span class="c">! generator inside mtprng_init.</span>
-            <span class="k">call </span><span class="nb">date_and_time</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
-            <span class="n">values</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="o">=</span> <span class="n">values</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-            <span class="n">values</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="o">=</span> <span class="n">values</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
-            <span class="k">call </span><span class="n">mtprng_init</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">values</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">*</span><span class="mi">10000</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span> <span class="n">INT32</span><span class="p">),</span> <span class="n">rng_state</span><span class="p">)</span>
-            <span class="n">clock_seq</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span> <span class="n">INT32</span><span class="p">)</span>
-            <span class="n">initialized</span> <span class="o">=</span> <span class="p">.</span><span class="n">true</span><span class="p">.</span>
-        <span class="k">endif</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(.</span><span class="nb">not</span><span class="p">.</span><span class="n">initialized</span><span class="p">)</span><span class="w"> </span><span class="k">then</span><span class="w"></span>
+<span class="w">            </span><span class="c">! Use the current date and time to init mtprng</span>
+<span class="w">            </span><span class="c">! but this gives limited varaibility, so mix</span>
+<span class="w">            </span><span class="c">! the result up.  Can we do better? In any</span>
+<span class="w">            </span><span class="c">! case, this gets passed through a quick</span>
+<span class="w">            </span><span class="c">! generator inside mtprng_init.</span>
+<span class="w">            </span><span class="k">call </span><span class="nb">date_and_time</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="n">values</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">values</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">values</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">values</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">values</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">call </span><span class="n">mtprng_init</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">values</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">*</span><span class="mi">10000</span><span class="o">+</span><span class="n">values</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span><span class="w"> </span><span class="n">INT32</span><span class="p">),</span><span class="w"> </span><span class="n">rng_state</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">clock_seq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">int</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span><span class="w"> </span><span class="n">INT32</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">initialized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">.</span><span class="n">true</span><span class="p">.</span><span class="w"></span>
+<span class="w">        </span><span class="k">endif</span>
 
-<span class="k">        </span><span class="n">variant</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">        </span><span class="n">variant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
 
-        <span class="k">if</span> <span class="p">(</span><span class="nb">present</span><span class="p">(</span><span class="n">version</span><span class="p">))</span> <span class="k">then</span>
-<span class="k">            </span><span class="n">v</span> <span class="o">=</span> <span class="n">version</span>
-        <span class="k">else</span>
-<span class="k">            </span><span class="n">v</span> <span class="o">=</span> <span class="mi">4</span>
-        <span class="k">endif</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">present</span><span class="p">(</span><span class="n">version</span><span class="p">))</span><span class="w"> </span><span class="k">then</span>
+<span class="k">            </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">version</span><span class="w"></span>
+<span class="w">        </span><span class="k">else</span>
+<span class="k">            </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="w"></span>
+<span class="w">        </span><span class="k">endif</span>
 
-<span class="k">        select case</span> <span class="p">(</span><span class="n">v</span><span class="p">)</span>
-        <span class="k">case</span> <span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-            <span class="c">! Nil UUID  - S 4.1.7</span>
-            <span class="n">uuid</span> <span class="o">=</span> <span class="nb">repeat</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39;-&#39;</span><span class="o">//</span><span class="nb">repeat</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39;-&#39;</span><span class="o">//</span><span class="nb">repeat</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">//</span> <span class="p">&amp;</span>
-                    <span class="s1">&#39;-&#39;</span><span class="o">//</span><span class="nb">repeat</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39;-&#39;</span><span class="o">//</span><span class="nb">repeat</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="mi">12</span><span class="p">)</span>
-            <span class="k">return</span>
-<span class="k">        case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-            <span class="k">call </span><span class="nb">date_and_time</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
-            <span class="c">! In case of too-frequent requests, we will replace time_low</span>
-            <span class="c">! with the count below ...</span>
-            <span class="k">if</span> <span class="p">(</span><span class="k">all</span><span class="p">(</span><span class="n">values</span><span class="o">==</span><span class="n">values_save</span><span class="p">))</span> <span class="k">then</span>
-<span class="k">                </span><span class="n">hires_count</span> <span class="o">=</span> <span class="n">hires_count</span> <span class="o">+</span> <span class="mi">1</span>
-            <span class="k">else</span>
-<span class="k">                </span><span class="n">hires_count</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="k">endif</span>
-<span class="k">        case</span><span class="p">(</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">)</span>
-            <span class="c">!Unimplemented</span>
-            <span class="n">uuid</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-            <span class="k">return</span>
-<span class="k">        case</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-            <span class="k">continue</span>
-<span class="k">        case</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-            <span class="c">!Unimplemented</span>
-            <span class="n">uuid</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-            <span class="k">return</span>
-<span class="k">        case </span><span class="n">default</span>
-            <span class="c">!Unspecified</span>
-            <span class="n">uuid</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-            <span class="k">return</span>
-<span class="k">        end select</span>
+<span class="k">        select case</span><span class="w"> </span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="c">! Nil UUID  - S 4.1.7</span>
+<span class="w">            </span><span class="n">uuid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">repeat</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39;-&#39;</span><span class="o">//</span><span class="nb">repeat</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39;-&#39;</span><span class="o">//</span><span class="nb">repeat</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">//</span><span class="w"> </span><span class="p">&amp;</span><span class="w"></span>
+<span class="w">                    </span><span class="s1">&#39;-&#39;</span><span class="o">//</span><span class="nb">repeat</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39;-&#39;</span><span class="o">//</span><span class="nb">repeat</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="mi">12</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span>
+<span class="k">        case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">call </span><span class="nb">date_and_time</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="n">values</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="c">! In case of too-frequent requests, we will replace time_low</span>
+<span class="w">            </span><span class="c">! with the count below ...</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">all</span><span class="p">(</span><span class="n">values</span><span class="o">==</span><span class="n">values_save</span><span class="p">))</span><span class="w"> </span><span class="k">then</span>
+<span class="k">                </span><span class="n">hires_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hires_count</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">            </span><span class="k">else</span>
+<span class="k">                </span><span class="n">hires_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="k">endif</span>
+<span class="k">        case</span><span class="p">(</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="c">!Unimplemented</span>
+<span class="w">            </span><span class="n">uuid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span>
+<span class="k">        case</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">continue</span>
+<span class="k">        case</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="c">!Unimplemented</span>
+<span class="w">            </span><span class="n">uuid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span>
+<span class="k">        case </span><span class="n">default</span><span class="w"></span>
+<span class="w">            </span><span class="c">!Unspecified</span>
+<span class="w">            </span><span class="n">uuid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span>
+<span class="k">        end select</span><span class="w"></span>
 
-        <span class="c">!4.1.4 Timestamp</span>
-        <span class="k">select case</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-        <span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-            <span class="n">timestamp</span> <span class="o">=</span> <span class="n">get_utc_since_1582</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-        <span class="k">case</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-            <span class="n">timestamp</span> <span class="o">=</span> <span class="nb">ior</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span> <span class="nb">ishft</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span> <span class="mi">28</span><span class="p">))</span>
-        <span class="k">end select</span>
+<span class="w">        </span><span class="c">!4.1.4 Timestamp</span>
+<span class="w">        </span><span class="k">select case</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">timestamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get_utc_since_1582</span><span class="p">(</span><span class="n">values</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">case</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">timestamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">ior</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span><span class="w"> </span><span class="nb">ishft</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span><span class="w"> </span><span class="mi">28</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="k">end select</span><span class="w"></span>
 
-        <span class="c">!4.1.5 Clock Sequence</span>
-        <span class="c">! 14 bits</span>
-        <span class="k">select case</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-        <span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-            <span class="n">clock_sequence</span> <span class="o">=</span> <span class="n">clock_seq</span>
-        <span class="k">case</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-            <span class="n">clock_sequence</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span> <span class="n">INT32</span><span class="p">)</span>
-        <span class="k">end select</span>
+<span class="w">        </span><span class="c">!4.1.5 Clock Sequence</span>
+<span class="w">        </span><span class="c">! 14 bits</span>
+<span class="w">        </span><span class="k">select case</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">clock_sequence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clock_seq</span><span class="w"></span>
+<span class="w">        </span><span class="k">case</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">clock_sequence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">int</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span><span class="w"> </span><span class="n">INT32</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">end select</span><span class="w"></span>
 
-        <span class="c">!4.1.6 Node</span>
-        <span class="c">! 48 bits</span>
-        <span class="k">select case</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-        <span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-            <span class="n">node</span> <span class="o">=</span> <span class="nb">ior</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span> <span class="nb">ishft</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span> <span class="mi">16</span><span class="p">))</span>
-            <span class="c">! No MAC address accessible - see section 4.5 !FIXME</span>
-        <span class="k">case</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-            <span class="n">node</span> <span class="o">=</span> <span class="nb">ior</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span> <span class="nb">ishft</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span> <span class="mi">16</span><span class="p">))</span>
-        <span class="k">end select</span>
+<span class="w">        </span><span class="c">!4.1.6 Node</span>
+<span class="w">        </span><span class="c">! 48 bits</span>
+<span class="w">        </span><span class="k">select case</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">case</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">ior</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span><span class="w"> </span><span class="nb">ishft</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span><span class="w"> </span><span class="mi">16</span><span class="p">))</span><span class="w"></span>
+<span class="w">            </span><span class="c">! No MAC address accessible - see section 4.5 !FIXME</span>
+<span class="w">        </span><span class="k">case</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">ior</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span><span class="w"> </span><span class="nb">ishft</span><span class="p">(</span><span class="n">mtprng_rand64</span><span class="p">(</span><span class="n">rng_state</span><span class="p">),</span><span class="w"> </span><span class="mi">16</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="k">end select</span>
 
-<span class="k">        </span><span class="n">time_low</span> <span class="o">=</span> <span class="nb">ibits</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
-        <span class="n">time_mid</span> <span class="o">=</span> <span class="nb">ibits</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">hires_count</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
-<span class="k">            </span><span class="n">time_hi_and_version</span> <span class="o">=</span> <span class="nb">ior</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">ibits</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="n">INT32</span><span class="p">),</span> <span class="nb">ishft</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
-        <span class="k">else</span>
-<span class="k">            </span><span class="n">time_hi_and_version</span> <span class="o">=</span> <span class="nb">ior</span><span class="p">(</span><span class="n">hires_count</span><span class="p">,</span> <span class="nb">ishft</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
-        <span class="k">endif</span>
+<span class="k">        </span><span class="n">time_low</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">ibits</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">32</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">time_mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">ibits</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hires_count</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
+<span class="k">            </span><span class="n">time_hi_and_version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">ior</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">ibits</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span><span class="w"> </span><span class="mi">48</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">),</span><span class="w"> </span><span class="n">INT32</span><span class="p">),</span><span class="w"> </span><span class="nb">ishft</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="k">else</span>
+<span class="k">            </span><span class="n">time_hi_and_version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">ior</span><span class="p">(</span><span class="n">hires_count</span><span class="p">,</span><span class="w"> </span><span class="nb">ishft</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="k">endif</span>
 
-<span class="k">        </span><span class="n">clk_seq_low</span> <span class="o">=</span> <span class="nb">ibits</span><span class="p">(</span><span class="n">clock_sequence</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
-        <span class="n">clk_seq_hi_res</span> <span class="o">=</span> <span class="nb">ior</span><span class="p">(</span><span class="nb">ibits</span><span class="p">(</span><span class="n">clock_sequence</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="nb">ishft</span><span class="p">(</span><span class="n">variant</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="k">        </span><span class="n">clk_seq_low</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">ibits</span><span class="p">(</span><span class="n">clock_sequence</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">clk_seq_hi_res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">ior</span><span class="p">(</span><span class="nb">ibits</span><span class="p">(</span><span class="n">clock_sequence</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">),</span><span class="w"> </span><span class="nb">ishft</span><span class="p">(</span><span class="n">variant</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">))</span><span class="w"></span>
 
-        <span class="n">uuid</span> <span class="o">=</span> <span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">time_low</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span><span class="o">//</span><span class="s2">&quot;-&quot;</span><span class="o">//</span> <span class="p">&amp;</span>
-                <span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">time_mid</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">//</span><span class="s2">&quot;-&quot;</span><span class="o">//</span> <span class="p">&amp;</span>
-                <span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">time_hi_and_version</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">//</span><span class="s2">&quot;-&quot;</span><span class="o">//</span> <span class="p">&amp;</span>
-                <span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">clk_seq_hi_res</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">//</span> <span class="p">&amp;</span>
-                <span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">clk_seq_low</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">//</span><span class="s2">&quot;-&quot;</span><span class="o">//</span> <span class="p">&amp;</span>
-                <span class="n">int64ToHexOctets</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="w">        </span><span class="n">uuid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">time_low</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="o">//</span><span class="s2">&quot;-&quot;</span><span class="o">//</span><span class="w"> </span><span class="p">&amp;</span><span class="w"></span>
+<span class="w">                </span><span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">time_mid</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="o">//</span><span class="s2">&quot;-&quot;</span><span class="o">//</span><span class="w"> </span><span class="p">&amp;</span><span class="w"></span>
+<span class="w">                </span><span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">time_hi_and_version</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="o">//</span><span class="s2">&quot;-&quot;</span><span class="o">//</span><span class="w"> </span><span class="p">&amp;</span><span class="w"></span>
+<span class="w">                </span><span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">clk_seq_hi_res</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">//</span><span class="w"> </span><span class="p">&amp;</span><span class="w"></span>
+<span class="w">                </span><span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">clk_seq_low</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">//</span><span class="s2">&quot;-&quot;</span><span class="o">//</span><span class="w"> </span><span class="p">&amp;</span><span class="w"></span>
+<span class="w">                </span><span class="n">int64ToHexOctets</span><span class="p">(</span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"></span>
 
-    <span class="k">contains</span>
+<span class="w">    </span><span class="k">contains</span>
 
-<span class="k">        function </span><span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="k">result</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="k">        function </span><span class="n">int32ToHexOctets</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="k">result</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"></span>
 
-        <span class="kt">integer</span><span class="p">(</span><span class="n">INT32</span><span class="p">),</span> <span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">b</span>
-        <span class="kt">integer</span><span class="p">,</span> <span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">n</span> <span class="c">! number of octets to print</span>
-        <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="p">)</span> <span class="kd">::</span> <span class="n">s</span>
+<span class="w">        </span><span class="kt">integer</span><span class="p">(</span><span class="n">INT32</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">b</span><span class="w"></span>
+<span class="w">        </span><span class="kt">integer</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="c">! number of octets to print</span>
+<span class="w">        </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">s</span><span class="w"></span>
 
-        <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i</span>
+<span class="w">        </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">i</span><span class="w"></span>
 
-        <span class="k">do </span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span>
-            <span class="n">s</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">:</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">hexdigits</span><span class="p">(</span><span class="nb">ibits</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-        <span class="k">enddo</span>
+<span class="w">        </span><span class="k">do </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="w"></span>
+<span class="w">            </span><span class="n">s</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">:</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hexdigits</span><span class="p">(</span><span class="nb">ibits</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="o">*</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="k">enddo</span>
 
-<span class="k">        end function </span><span class="n">int32ToHexOctets</span>
+<span class="k">        end function </span><span class="n">int32ToHexOctets</span><span class="w"></span>
 
-        <span class="k">function </span><span class="n">int64ToHexOctets</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="k">result</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-        <span class="kt">integer</span><span class="p">(</span><span class="n">INT64</span><span class="p">),</span> <span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">b</span>
-        <span class="kt">integer</span><span class="p">,</span> <span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">n</span> <span class="c">! number of octets to print</span>
-        <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="p">)</span> <span class="kd">::</span> <span class="n">s</span>
+<span class="w">        </span><span class="k">function </span><span class="n">int64ToHexOctets</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="k">result</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="kt">integer</span><span class="p">(</span><span class="n">INT64</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">b</span><span class="w"></span>
+<span class="w">        </span><span class="kt">integer</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="c">! number of octets to print</span>
+<span class="w">        </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">s</span><span class="w"></span>
 
-        <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i</span>
+<span class="w">        </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">i</span><span class="w"></span>
 
-        <span class="k">do </span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span>
-            <span class="n">s</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">:</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">hexdigits</span><span class="p">(</span><span class="nb">ibits</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-        <span class="k">enddo</span>
+<span class="w">        </span><span class="k">do </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="w"></span>
+<span class="w">            </span><span class="n">s</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">:</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hexdigits</span><span class="p">(</span><span class="nb">ibits</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="o">*</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="k">enddo</span>
 
-<span class="k">        end function </span><span class="n">int64ToHexOctets</span>
+<span class="k">        end function </span><span class="n">int64ToHexOctets</span><span class="w"></span>
 
-    <span class="k">end function </span><span class="n">generate_uuid</span>
+<span class="w">    </span><span class="k">end function </span><span class="n">generate_uuid</span><span class="w"></span>
 </pre></div>
 
     </section>
     <br>
     
-    
     </div>
   </div>
-
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>uuid-fortran was developed by Jacob Williams<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>uuid-fortran was developed by Jacob Williams<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-            
-            
           </p>
         </div>
       </div>
@@ -663,14 +506,11 @@ pseudo-randomly-generated UUID.</p>
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>
