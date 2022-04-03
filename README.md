@@ -30,19 +30,13 @@ To use `uuid-fortran` within your fpm project, add the following to your `fpm.to
 uuid-fortran = { git="https://github.com/jacobwilliams/uuid-fortran.git" }
 ```
 
-To generate the documentation using [ford](https://github.com/Fortran-FOSS-Programmers/ford), run: ```ford ford.md```
-
-To use `uuid-fortran` within your fpm project, add the following to your `fpm.toml` file:
-```toml
-[dependencies]
-uuid-fortran = { git="https://github.com/jacobwilliams/uuid-fortran.git" }
-```
-
 Or to use a specific version:
 ```toml
 [dependencies]
 uuid-fortran = { git="https://github.com/jacobwilliams/uuid-fortran.git", tag = "1.0.0"  }
 ```
+
+To generate the documentation using [ford](https://github.com/Fortran-FOSS-Programmers/ford), run: ```ford ford.md```
 
 ### Documentation
 
