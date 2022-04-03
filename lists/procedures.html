@@ -101,21 +101,30 @@ Uses the Mersenne Twister algorithm</p></td></tr>
 <g id="call~~graph~~CallGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 84.53)">
 <title>call~~graph~~CallGraph</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-84.53 356,-84.53 356,4 -4,4"/>
-<!-- proc~generate_uuid -->
+<!-- proc~mtprng_init -->
 <g id="call~~graph~~CallGraph_node1" class="node">
-<title>proc~generate_uuid</title>
-<g id="a_call~~graph~~CallGraph_node1"><a xlink:href=".././proc/generate_uuid.html" xlink:title="generate_uuid">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="90,-66 0,-66 0,-42 90,-42 90,-66"/>
-<text text-anchor="middle" x="45" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">generate_uuid</text>
+<title>proc~mtprng_init</title>
+<g id="a_call~~graph~~CallGraph_node1"><a xlink:href=".././proc/mtprng_init.html" xlink:title="mtprng_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="352,-65 279,-65 279,-41 352,-41 352,-65"/>
+<text text-anchor="middle" x="315.5" y="-50.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mtprng_init</text>
 </a>
 </g>
 </g>
-<!-- proc~mtprng_init -->
+<!-- proc~get_utc_since_1582 -->
 <g id="call~~graph~~CallGraph_node2" class="node">
-<title>proc~mtprng_init</title>
-<g id="a_call~~graph~~CallGraph_node2"><a xlink:href=".././proc/mtprng_init.html" xlink:title="mtprng_init">
-<polygon fill="#d9534f" stroke="#d9534f" points="352,-65 279,-65 279,-41 352,-41 352,-65"/>
-<text text-anchor="middle" x="315.5" y="-50.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mtprng_init</text>
+<title>proc~get_utc_since_1582</title>
+<g id="a_call~~graph~~CallGraph_node2"><a xlink:href=".././proc/get_utc_since_1582.html" xlink:title="get_utc_since_1582">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="243,-66 126,-66 126,-42 243,-42 243,-66"/>
+<text text-anchor="middle" x="184.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_utc_since_1582</text>
+</a>
+</g>
+</g>
+<!-- proc~generate_uuid -->
+<g id="call~~graph~~CallGraph_node3" class="node">
+<title>proc~generate_uuid</title>
+<g id="a_call~~graph~~CallGraph_node3"><a xlink:href=".././proc/generate_uuid.html" xlink:title="generate_uuid">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="90,-66 0,-66 0,-42 90,-42 90,-66"/>
+<text text-anchor="middle" x="45" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">generate_uuid</text>
 </a>
 </g>
 </g>
@@ -125,17 +134,8 @@ Uses the Mersenne Twister algorithm</p></td></tr>
 <path fill="none" stroke="#000000" d="M83.86,-66.07C97.05,-69.7 112.04,-73.2 126,-75 177.57,-81.66 191.58,-82.73 243,-75 252.82,-73.52 263.15,-70.97 272.81,-68.11"/>
 <polygon fill="#000000" stroke="#000000" points="274.09,-71.38 282.58,-65.05 272,-64.69 274.09,-71.38"/>
 </g>
-<!-- proc~get_utc_since_1582 -->
-<g id="call~~graph~~CallGraph_node3" class="node">
-<title>proc~get_utc_since_1582</title>
-<g id="a_call~~graph~~CallGraph_node3"><a xlink:href=".././proc/get_utc_since_1582.html" xlink:title="get_utc_since_1582">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="243,-66 126,-66 126,-42 243,-42 243,-66"/>
-<text text-anchor="middle" x="184.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_utc_since_1582</text>
-</a>
-</g>
-</g>
 <!-- proc~generate_uuid&#45;&gt;proc~get_utc_since_1582 -->
-<g id="call~~graph~~CallGraph_edge1" class="edge">
+<g id="call~~graph~~CallGraph_edge3" class="edge">
 <title>proc~generate_uuid&#45;&gt;proc~get_utc_since_1582</title>
 <path fill="none" stroke="#000000" d="M90.26,-54C98.39,-54 107.04,-54 115.67,-54"/>
 <polygon fill="#000000" stroke="#000000" points="115.76,-57.5 125.76,-54 115.76,-50.5 115.76,-57.5"/>
@@ -150,7 +150,7 @@ Uses the Mersenne Twister algorithm</p></td></tr>
 </g>
 </g>
 <!-- proc~generate_uuid&#45;&gt;proc~mtprng_rand64 -->
-<g id="call~~graph~~CallGraph_edge3" class="edge">
+<g id="call~~graph~~CallGraph_edge1" class="edge">
 <title>proc~generate_uuid&#45;&gt;proc~mtprng_rand64</title>
 <path fill="none" stroke="#000000" d="M85.4,-41.96C100.65,-37.31 118.27,-31.93 134.33,-27.02"/>
 <polygon fill="#000000" stroke="#000000" points="135.55,-30.31 144.09,-24.04 133.51,-23.61 135.55,-30.31"/>
